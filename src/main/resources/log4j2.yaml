@@ -1,0 +1,11 @@
+appenders:
+  stdout:
+    name: stdout
+    target: SYSTEM_OUT
+    pattern: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+loggers:
+  root:
+    level: info
+    appenders:
+      - stdout
